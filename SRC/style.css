@@ -1,9 +1,9 @@
-body{
+#body{
     margin: 0;
     padding: 0;
     font-family: "Roboto";
     /*overflow-x: hidden;*/
-    /*background-color: #000000;*/
+    background-color: #000000;
 }
 
 #cabecalho{
@@ -28,18 +28,39 @@ body{
     color: #ffffff;
     padding: 20px;
 }
-
 #inicio{
-    width: 100vw;
-    height: 100vh;
-    /*border: 1px solid #000000;*/
-    position: relative;
+    background-color: #000000;
+    opacity: 0.5;
 }
-#inicio::before{
+.img{
+    width: 100%;
+    height: 100vh;
+    background-image: url(PEGGAVISÃO\ app\ -\ LOGO\ OK\ 1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    z-index: -1;
+}
+.tamCard{
+    height: 400px;
+    min-height: 250px;
+    border-radius: 20%;
+    overflow: hidden;
+}
+#fcontatos{
+    border-right: #000000 2px solid;
+}
+#contatos{
+    background: linear-gradient(to right, #4fdffa, #7e90f3);
+}
+footer{
+    background-color: #7eb4f3;
+}
+/*inicio::before{
     content: "";
     position: absolute;
     inset: 0;
-    background: url(PEGGAVISÃO\ app\ -\ LOGO\ OK\ 1.png) no-repeat center;
     z-index: -1;
     opacity: 0.7;
     background-color: rgb(0, 0, 0);
@@ -53,7 +74,7 @@ body{
     color: #ffffff;
     margin: 0px;
 }
-.container{
+/*.container{
     width: 65%;
     text-align: center;
 }
@@ -62,26 +83,18 @@ body{
 }
 .container p{
     font-size: 20px;
-}
-.cards{
+}*/
+/*.cards{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-.card{
-    width: 350px;
-    height: 400px;
-    margin: 20px;
-    border: 1px solid #f5f5f5;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-    border-radius: 10px;
-}
+}*/
 .card h2{
     font-size: 30px;
+}
+@media (max-width: 779px) {
+    .img {
+        height: 50vh; /* Altura para telas menores */
+    }
 }
