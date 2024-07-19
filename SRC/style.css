@@ -90,7 +90,8 @@ footer{
     .img {
         height: 50vh;
     }
-    #nav-cabecalho a{
+    #nav-cabecalho{
         padding: 10px;
+        display: none;
     }
 }
